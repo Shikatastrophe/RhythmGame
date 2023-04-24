@@ -2481,6 +2481,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 628464166403487636, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: pressed.m_SingletonActionBindings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 628464166403487636, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: pressed.m_SingletonActionBindings.Array.data[2].m_Id
+      value: f0e48541-f98b-4f8f-a24e-fbadf78f5dd9
+      objectReference: {fileID: 0}
+    - target: {fileID: 628464166403487636, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: pressed.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Touchscreen>/touch*/Press
+      objectReference: {fileID: 0}
+    - target: {fileID: 628464166403487636, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: pressed.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Pressed
+      objectReference: {fileID: 0}
     - target: {fileID: 628464166403487645, guid: 4953947371697ec4e98605544b689b1c, type: 3}
       propertyPath: m_Name
       value: Circle
