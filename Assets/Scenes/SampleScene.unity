@@ -386,11 +386,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a464c5707a17084fa69cf8bee8d9d34, type: 3}
---- !u!1 &378162255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 628464165912547546, guid: 4953947371697ec4e98605544b689b1c, type: 3}
-  m_PrefabInstance: {fileID: 628464165132510762}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &391887292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8786045842371824263, guid: 0a464c5707a17084fa69cf8bee8d9d34, type: 3}
@@ -1670,27 +1665,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a464c5707a17084fa69cf8bee8d9d34, type: 3}
---- !u!50 &1468970741
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378162255}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1515270038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1753,32 +1727,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8786045842371824263, guid: 0a464c5707a17084fa69cf8bee8d9d34, type: 3}
   m_PrefabInstance: {fileID: 450639480}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1524671075 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 628464166095127625, guid: 4953947371697ec4e98605544b689b1c, type: 3}
-  m_PrefabInstance: {fileID: 628464165132510762}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1524671081
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1524671075}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1532074259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2540,6 +2488,38 @@ PrefabInstance:
     - target: {fileID: 628464166403487645, guid: 4953947371697ec4e98605544b689b1c, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2003390548582855298, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165579007081760330, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268361197068510010, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6430473055668763499, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6485145771473135834, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166719966879764322, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433601176026285695, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809335181311621688, guid: 4953947371697ec4e98605544b689b1c, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4953947371697ec4e98605544b689b1c, type: 3}
