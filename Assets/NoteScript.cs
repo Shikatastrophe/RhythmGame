@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class NoteScript : MonoBehaviour
 {
-
-    public GameObject NotaA;
-    public GameObject NotaB;
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == NotaA)
+        if (collision.gameObject.tag == "Note1")
         {
             Success();
         }
-        else if (collision.gameObject == NotaB)
+        else if (collision.gameObject.tag == "Note2")
         {
             Fail();
         }
