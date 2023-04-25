@@ -47,9 +47,9 @@ TagManager:
   - name: Track
     uniqueID: 1549934319
     locked: 0
-  - name: Notes
-    uniqueID: 1897480689
-    locked: 0
   - name: Player
     uniqueID: 3882900255
+    locked: 0
+  - name: Notes
+    uniqueID: 1897480689
     locked: 0

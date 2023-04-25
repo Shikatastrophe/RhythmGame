@@ -4,26 +4,34 @@ using UnityEngine;
 
 public class NoteScript2 : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    // You don't need these arrays anymore
+    // public GameObject[] note1;
+    // public GameObject[] note2;
+
+    // Use OnTriggerEnter2D() instead of OnCollisionEnter2D()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.tag == "Note2")
+        if (other.CompareTag("Note2"))
         {
-            Success();
+            Success(other);
         }
-        else if (collision.gameObject.tag == "Note1")
+        else if (other.CompareTag("Note1"))
         {
-            Fail();
+            Fail(other);
         }
     }
 
-    private void Success()
+    private void Success(Collider2D other)
     {
         Debug.Log("Gaming");
+        // Use other.gameObject.GetComponent<Animator>() instead of note2[0].GetComponent<Animator>()
+        other.gameObject.GetComponent<Animator>().SetTrigger("succ");
     }
 
-    private void Fail()
+    private void Fail(Collider2D other)
     {
         Debug.Log("Fail");
+        // Use other.gameObject.GetComponent<Animator>() instead of note1[0].GetComponent<Animator>()
+        other.gameObject.GetComponent<Animator>().SetTrigger("fail");
     }
 }
-
