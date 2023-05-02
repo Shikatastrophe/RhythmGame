@@ -26,6 +26,7 @@ public class NoteScript2 : MonoBehaviour
         Debug.Log("Gaming");
         // Use other.gameObject.GetComponent<Animator>() instead of note2[0].GetComponent<Animator>()
         other.gameObject.GetComponent<Animator>().SetTrigger("succ");
+        Destroy(other.gameObject.GetComponent<CircleCollider2D>());
     }
 
     private void Fail(Collider2D other)
@@ -33,5 +34,6 @@ public class NoteScript2 : MonoBehaviour
         Debug.Log("Fail");
         // Use other.gameObject.GetComponent<Animator>() instead of note1[0].GetComponent<Animator>()
         other.gameObject.GetComponent<Animator>().SetTrigger("fail");
+        Destroy(other.gameObject.GetComponent<CircleCollider2D>());
     }
 }

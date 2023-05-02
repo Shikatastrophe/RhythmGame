@@ -5,6 +5,6 @@ using UnityEngine;
 public class GlobalVar : MonoBehaviour
 {
 
-    [SerializeField] public static float trackSpeed = 125f;
+    [SerializeField] public static float trackSpeed = 75f;
   
 }
