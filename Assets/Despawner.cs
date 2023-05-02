@@ -9,13 +9,12 @@ public class Despawner : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter2D(Collision2D coll)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the colliding object has the tag Note1 or Note2
-        if (coll.gameObject.tag == "Note1" || coll.gameObject.tag == "Note2")
+        if (other.CompareTag("Note1") || other.CompareTag("Note2"))
         {
-            // Destroy the colliding object
-            Destroy(coll.gameObject);
+            Destroy(other.gameObject);
+            
         }
     }
 }
