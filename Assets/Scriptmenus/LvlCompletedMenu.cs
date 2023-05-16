@@ -9,4 +9,9 @@ public class LvlCompletedMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void Return()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
