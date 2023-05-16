@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class NoteScript2 : MonoBehaviour
 {
+    [SerializeField] private float points = 10;
+    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private ComboManager comboManager;
+    [SerializeField] private ComboManagerText managerText;
     // You don't need these arrays anymore
     // public GameObject[] note1;
     // public GameObject[] note2;
@@ -27,6 +31,9 @@ public class NoteScript2 : MonoBehaviour
         // Use other.gameObject.GetComponent<Animator>() instead of note2[0].GetComponent<Animator>()
         other.gameObject.GetComponent<Animator>().SetTrigger("succ");
         Destroy(other.gameObject.GetComponent<CircleCollider2D>());
+        scoreManager.PointAdd(points);
+        comboManager.ComboAdd();
+        managerText.ComboAdd();
     }
 
     private void Fail(Collider2D other)
@@ -35,5 +42,7 @@ public class NoteScript2 : MonoBehaviour
         // Use other.gameObject.GetComponent<Animator>() instead of note1[0].GetComponent<Animator>()
         other.gameObject.GetComponent<Animator>().SetTrigger("fail");
         Destroy(other.gameObject.GetComponent<CircleCollider2D>());
+        comboManager.ComboReset();
+        managerText.ComboReset();
     }
 }
