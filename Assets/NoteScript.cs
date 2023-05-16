@@ -8,6 +8,7 @@ public class NoteScript : MonoBehaviour
     [SerializeField] private ScoreManager scoreManager;
     [SerializeField] private ComboManager comboManager;
     [SerializeField] private ComboManagerText managerText;
+    public Animator Animator;
     // You don't need these arrays anymore
     // public GameObject[] note1;
     // public GameObject[] note2;
@@ -34,6 +35,7 @@ public class NoteScript : MonoBehaviour
         scoreManager.PointAdd(points);
         comboManager.ComboAdd();
         managerText.ComboAdd();
+        Animator.SetTrigger("Success");
     }
 
     private void Fail(Collider2D other)
@@ -44,5 +46,6 @@ public class NoteScript : MonoBehaviour
         Destroy(other.gameObject.GetComponent<CircleCollider2D>());
         comboManager.ComboReset();
         managerText.ComboReset();
+        Animator.SetTrigger("Fail");
     }
 }
