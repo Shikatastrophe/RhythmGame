@@ -9,4 +9,9 @@ public class Yorushika : MonoBehaviour
     {
         SceneManager.LoadScene("Evening Calm, Somewhere, Fireworks");
     }
+
+    public void Asphyxia()
+    {
+        SceneManager.LoadScene("Asphyxia");
+    }
 }
