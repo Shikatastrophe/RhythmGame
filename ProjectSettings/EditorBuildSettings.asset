@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Evening Calm, Somewhere, Fireworks.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Asphyxia.unity
+    guid: b77e882b9eb1b4845801966e7500577a
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7685068d618de5344932bddaf30e49e2, type: 2}
