@@ -35,7 +35,7 @@ public class NoteScript2 : MonoBehaviour
         scoreManager.PointAdd(points);
         comboManager.ComboAdd();
         managerText.ComboAdd();
-        Animator.SetTrigger("Success");
+        Animator.SetTrigger("Purple");
     }
 
     private void Fail(Collider2D other)
