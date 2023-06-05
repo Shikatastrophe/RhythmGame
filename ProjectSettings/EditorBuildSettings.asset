@@ -21,4 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Asphyxia.unity
     guid: b77e882b9eb1b4845801966e7500577a
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6ab7517cc3acd29488d7be7e5cabc626, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 382d9d7763a6d034d8a21bfdbe0fd075, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7685068d618de5344932bddaf30e49e2, type: 2}
